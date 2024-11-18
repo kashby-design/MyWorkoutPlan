@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Plan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 0;
+            background-color: #e3edf2;
+        }
+        p {
+            font-size: 18px;
+            margin: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding-bottom: 40px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .rest-card {
+            font-size: 18px;
+            text-align: center;
+            padding: 15px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            color: #555;
+        }
+        .tabs {
+            display: flex;
+            justify-content: space-around;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #fff;
+            border-top: 1px solid #ddd;
+        }
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 15px 0;
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: light;
+        }
+        .tab.active {
+            border-top: 2px solid black;
+            font-weight: bold;
+            color: #000;
+        }
+        .workout-day {
+            display: none;
+        }
+        .workout-day.active {
+            display: block;
+        }
+        input {
+            border-radius: 8px;
+            border: 1px solid #d3d3d3;
+            outline: none;
+            width: 100px;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        input:focus {
+            border-color: #007bff;
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 22px;
+            margin: 0 0 8px 0;
+        }]
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Workout Plan</h1>
+
+        <div id="day1" class="workout-day active">
+            <div class="card">
+                <h2>Barbell Bench Press</h2>
+                <p>4 Sets × 8 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Seated Cable Row</h2>
+                <p>3 Sets × 10 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Dumbbell Shoulder Press</h2>
+                <p>3 Sets × 10 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Lat Pulldowns</h2>
+                <p>3 Sets × 10 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Incline Dumbbell Flyes</h2>
+                <p>3 Sets × 12 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Tricep Dips (Bench Dips)</h2>
+                <p>3 Sets × 12 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Cable Woodchoppers</h2>
+                <p>3 Sets × 12 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        </div>
+
+        <div id="day3" class="workout-day">
+            <div class="card">
+                <h2>Barbell Back Squats</h2>
+                <p>4 Sets × 8 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Deadlifts</h2>
+                <p>4 Sets × 8 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Leg Press</h2>
+                <p>3 Sets × 10 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Leg Curls</h2>
+                <p>3 Sets × 12 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Hyperextensions (Back Extensions)</h2>
+                <p>3 Sets × 12 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Standing Calf Raises</h2>
+                <p>3 Sets × 15 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Ab Wheel Rollouts (or Swiss Ball Rollouts)</h2>
+                <p>3 Sets × 12 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        </div>
+
+        <div id="day5" class="workout-day">
+            <div class="card">
+                <h2>Dumbbell Goblet Squats</h2>
+                <p>3 Sets × 12 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Dumbbell Romanian Deadlifts</h2>
+                <p>3 Sets × 12 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Dumbbell Bench Press</h2>
+                <p>3 Sets × 10 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>One-Arm Dumbbell Row</h2>
+                <p>3 Sets × 10 each arm Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Dumbbell Lunges</h2>
+                <p>3 Sets × 10 each leg Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Dumbbell Russian Twists</h2>
+                <p>3 Sets × 15 each side Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Supermans</h2>
+                <p>3 Sets × 12 Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        
+            <div class="card">
+                <h2>Plank with Dumbbell Row (Renegade Rows)</h2>
+                <p>3 Sets × 8 each arm Reps</p>
+                <input type="number" placeholder="Weight (lbs)">
+            </div>
+            <div class="rest-card">
+                Rest 60-90 Sec
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <a class="tab active" onclick="showDay('day1')">Upper Body</a>
+        <a class="tab" onclick="showDay('day3')">Lower Body</a>
+        <a class="tab" onclick="showDay('day5')">Full Body</a>
+    </div>
+
+    <script>
+        function showDay(dayId) {
+            // Hide all workout days
+            document.querySelectorAll('.workout-day').forEach(day => {
+                day.classList.remove('active');
+            });
+            
+            // Show selected day
+            document.getElementById(dayId).classList.add('active');
+            
+            // Update tab styling
+            document.querySelectorAll('.tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
